@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
 // Large Interface
 class IVehicle {
 public:

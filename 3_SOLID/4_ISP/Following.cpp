@@ -1,12 +1,10 @@
 #include <iostream>
 using namespace std;
 
-
 // Interface 1
 class IDrive {
 public:
     virtual void drive() = 0;
-
     virtual ~IDrive() {}
 };
 
@@ -15,7 +13,6 @@ public:
 class IFly {
 public:
     virtual void fly() = 0;
-
     virtual ~IFly() {}
 };
 

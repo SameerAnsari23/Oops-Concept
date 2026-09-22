@@ -49,15 +49,13 @@ int main() {
     // Permanent Employee
     Employee* permanent = new PermanentEmployee();
 
-    cout << "Permanent Employee Salary: "
-         << permanent->calculateSalary() << endl;
+    cout << "Permanent Employee Salary: " << permanent->calculateSalary() << endl;
 
 
     // Contractual Employee
     Employee* contractual = new ContractualEmployee();
 
-    cout << "Contractual Employee Salary: "
-         << contractual->calculateSalary() << endl;
+    cout << "Contractual Employee Salary: " << contractual->calculateSalary() << endl;
 
 
     delete permanent;
