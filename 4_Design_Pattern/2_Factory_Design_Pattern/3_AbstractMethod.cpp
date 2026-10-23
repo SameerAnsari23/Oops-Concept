@@ -132,10 +132,7 @@ public:
 // Step 9: Notification Service
 class NotificationService {
 public:
-    void sendEmail(
-        INotificationFactory& factory,
-        const string& message
-    ) {
+    void sendEmail(INotificationFactory& factory, const string& message) {
         unique_ptr<INotification> email(factory.createEmail());
 
         unique_ptr<INotificationConfig> config(
@@ -146,15 +143,10 @@ public:
         email->send(message);
     }
 
-    void sendSMS(
-        INotificationFactory& factory,
-        const string& message
-    ) {
+    void sendSMS(INotificationFactory& factory, const string& message) {
         unique_ptr<INotification> sms(factory.createSMS());
 
-        unique_ptr<INotificationConfig> config(
-            factory.createSMSConfig()
-        );
+        unique_ptr<INotificationConfig> config(factory.createSMSConfig());
 
         config->configure();
         sms->send(message);

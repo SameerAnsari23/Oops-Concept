@@ -3,7 +3,7 @@ using namespace std;
 
 /*
 class Singleton {
-    private: 
+    public: 
     Singleton() {
         cout << "Hello This is constructor" << endl;
     }
@@ -20,7 +20,6 @@ int main () {
     }
 }
 */
-
 
 
 class Singleton {
